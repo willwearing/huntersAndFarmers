@@ -1,10 +1,16 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import { JetBrains_Mono } from 'next/font/google'
+import { DM_Sans, Inter, JetBrains_Mono } from 'next/font/google'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { getOrganizationSchema } from '@/lib/structured-data'
 import '../styles/globals.css'
+
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  variable: '--font-dm-sans',
+  display: 'swap',
+  weight: ['400', '500', '600', '700'],
+})
 
 const inter = Inter({
   subsets: ['latin'],
@@ -47,7 +53,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" className={`${dmSans.variable} ${inter.variable} ${jetbrainsMono.variable}`}>
       <body className="font-sans antialiased">
         <script
           type="application/ld+json"
@@ -62,4 +68,3 @@ export default function RootLayout({
     </html>
   )
 }
-

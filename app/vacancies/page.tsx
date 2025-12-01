@@ -1,10 +1,9 @@
-import type { Metadata } from 'next'
-import { Card } from '@/components/ui/card'
+'use client'
 
-export const metadata: Metadata = {
-  title: 'Current Vacancies | Hunters and Farmers',
-  description: 'View current sales roles we\'re recruiting. Register your ideal role if you don\'t see a match.',
-}
+import { motion, useInView } from 'framer-motion'
+import { useRef } from 'react'
+import { GradientBackground } from '@/components/ui/GradientBackground'
+import { MapPin, DollarSign, Building2 } from 'lucide-react'
 
 const vacancies = [
   {
@@ -28,42 +27,65 @@ const vacancies = [
 ]
 
 export default function VacanciesPage() {
+  const cardsRef = useRef(null)
+  const cardsInView = useInView(cardsRef, { once: true, margin: '-100px' })
+
   return (
     <div className="min-h-screen">
-      <section className="py-section-lg px-6">
-        <div className="mx-auto max-w-content">
-          <h1 className="text-h1 font-semibold text-neutral-900">
-            Current roles we're recruiting
-          </h1>
-          <p className="mt-6 max-w-3xl text-body-lg text-neutral-600">
-            If you can't see a vacancy that interests you, register your ideal role and we will be in touch.
-          </p>
+      <section className="relative py-32 px-6 overflow-hidden">
+        <GradientBackground variant="section" />
+        <div className="relative z-10 mx-auto max-w-content">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="text-accent text-sm font-medium uppercase tracking-wider">Opportunities</span>
+            <h1 className="mt-4 text-4xl md:text-5xl font-bold text-surface-50">
+              Current roles we&apos;re recruiting
+            </h1>
+          </motion.div>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="mt-6 max-w-2xl text-lg text-surface-300 font-body"
+          >
+            If you can&apos;t see a vacancy that interests you, register your ideal role and we will be in touch.
+          </motion.p>
         </div>
       </section>
 
-      <section className="py-section px-6 border-t border-neutral-200">
+      <section ref={cardsRef} className="py-24 px-6 bg-surface-900 border-t border-surface-800">
         <div className="mx-auto max-w-container">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {vacancies.map((vacancy, index) => (
-              <Card
+              <motion.div
                 key={index}
-                className="border border-neutral-200 p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                initial={{ opacity: 0, y: 30 }}
+                animate={cardsInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="glass-card p-8 glow-border hover:-translate-y-1 hover:bg-surface-800/70 transition-all duration-300 group"
               >
-                <h3 className="text-h3 font-semibold mb-4 text-neutral-900">
+                <h3 className="text-xl font-semibold mb-6 text-surface-50 group-hover:text-accent transition-colors">
                   {vacancy.title}
                 </h3>
-                <div className="space-y-2 text-body text-neutral-700">
-                  <p>
-                    <span className="font-medium">Location:</span> {vacancy.location}
-                  </p>
-                  <p>
-                    <span className="font-medium">Compensation:</span> {vacancy.compensation}
-                  </p>
-                  <p>
-                    <span className="font-medium">Sector:</span> {vacancy.sector}
-                  </p>
+                <div className="space-y-4">
+                  <div className="flex items-center gap-3 text-surface-300">
+                    <MapPin className="w-4 h-4 text-surface-500" />
+                    <span>{vacancy.location}</span>
+                  </div>
+                  <div className="flex items-center gap-3 text-surface-300">
+                    <DollarSign className="w-4 h-4 text-surface-500" />
+                    <span>{vacancy.compensation}</span>
+                  </div>
+                  <div className="flex items-center gap-3 text-surface-300">
+                    <Building2 className="w-4 h-4 text-surface-500" />
+                    <span>{vacancy.sector}</span>
+                  </div>
                 </div>
-              </Card>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -71,4 +93,3 @@ export default function VacanciesPage() {
     </div>
   )
 }
-
