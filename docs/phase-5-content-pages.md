@@ -1,7 +1,7 @@
 # Phase 5: Content Pages
-## Build About and Services Pages
+## Build About, Services, and Vacancies Pages
 
-**Goal**: Create the About (Who We Are) and Services (What We Do) pages with proper content structure and styling.
+**Goal**: Create the About, Services, and Vacancies pages with proper content structure and styling using the provided copy.
 
 **Reference**: See Content Sections, Feature Cards, and Typography in `design-analysis.md`.
 
@@ -13,76 +13,32 @@
 
 Create `app/about/page.tsx`:
 
-```typescript
-export default function AboutPage() {
-  return (
-    <div className="min-h-screen">
-      <section className="py-section-lg px-6">
-        <div className="mx-auto max-w-content">
-          <h1 className="text-h1 font-semibold text-neutral-900">
-            Who We Are
-          </h1>
-          <p className="mt-6 max-w-3xl text-body-lg text-neutral-600">
-            We are a global investment and technology development firm.
-            Academic culture. Real-world challenges. The excitement of a startup
-            with the resources of an industry leader.
-          </p>
-        </div>
-      </section>
+**Structure:**
+- Hero section with title "About us"
+- Main intro paragraph about Hunters and Farmers
+- "What We Recruit" section with roles listed in TWO COLUMNS
 
-      <section className="py-section px-6 border-t border-neutral-200">
-        <div className="mx-auto max-w-content">
-          <h2 className="text-h2 font-semibold mb-6 text-neutral-900">
-            Our Mission
-          </h2>
-          <p className="max-w-3xl text-body text-neutral-700 leading-relaxed">
-            Our mission is to deliver exceptional results for our clients through
-            innovative approaches, rigorous analysis, and a commitment to excellence.
-            We combine academic rigor with real-world expertise to solve complex challenges.
-          </p>
-        </div>
-      </section>
+**Content:**
+- Title: "About us"
+- Main copy: "At Hunters and Farmers, we keep recruitment simple, effective, and focused on what works. We're not here to reinvent the wheel – we're here to connect great sales professionals with businesses. With experience recruiting across all levels, from Sales Administrators to Sales Directors, we're well placed to be able to assist you in finding what you need, be that your next position or your next hire. What sets us apart is that our consultants have worked in sales roles themselves, so they know firsthand what it takes to succeed in the field. This real-world insight, combined with proven recruitment expertise, allows us to deliver a straightforward, consultative service."
 
-      <section className="py-section px-6 border-t border-neutral-200">
-        <div className="mx-auto max-w-content">
-          <h2 className="text-h2 font-semibold mb-6 text-neutral-900">
-            Core Principles
-          </h2>
-          <div className="space-y-6">
-            <div>
-              <h3 className="text-h3 font-semibold mb-3 text-neutral-900">
-                Excellence
-              </h3>
-              <p className="max-w-3xl text-body text-neutral-700 leading-relaxed">
-                We strive for excellence in everything we do, setting high standards
-                and continuously improving our processes and outcomes.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-h3 font-semibold mb-3 text-neutral-900">
-                Innovation
-              </h3>
-              <p className="max-w-3xl text-body text-neutral-700 leading-relaxed">
-                We embrace innovation and new technologies to stay ahead of the curve
-                and deliver cutting-edge solutions.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-h3 font-semibold mb-3 text-neutral-900">
-                Integrity
-              </h3>
-              <p className="max-w-3xl text-body text-neutral-700 leading-relaxed">
-                We conduct our business with the highest ethical standards, building
-                trust through transparency and accountability.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  )
-}
-```
+- "What We Recruit" section with roles in two columns:
+  - Sales Director
+  - National Sales Manager
+  - State Sales Manager
+  - Field Sales Manager
+  - Channel Sales Manager
+  - New Business Sales Manager
+  - Account Executive
+  - Sales Executive
+  - Account Manager
+  - Business Development Manager
+  - Sales Consultant
+  - National Account Manager
+  - Key Account Manager
+  - Sales Engineer
+  - Sales Representative
+  - Territory / Area Manager
 
 ---
 
@@ -90,277 +46,155 @@ export default function AboutPage() {
 
 Create `app/services/page.tsx`:
 
-```typescript
-import { Card } from '@/components/ui/card'
+**Structure:**
+- Hero section with title "Our Services"
+- Three main service sections:
+  1. Permanent Search (with detailed 6-step process)
+  2. Retained Search
+  3. Bespoke Recruitment Solutions
 
-const services = [
-  {
-    title: 'Investment Approach',
-    description: 'Our systematic approach combines quantitative analysis with fundamental research to identify opportunities.',
-  },
-  {
-    title: 'Technology',
-    description: 'We leverage cutting-edge technology and data science to drive decision-making and optimize performance.',
-  },
-  {
-    title: 'Risk Management',
-    description: 'Comprehensive risk management frameworks ensure we protect capital while pursuing opportunities.',
-  },
-  {
-    title: 'Entrepreneurship',
-    description: 'We foster an entrepreneurial culture that encourages innovation and creative problem-solving.',
-  },
-]
+**Content:**
 
-export default function ServicesPage() {
-  return (
-    <div className="min-h-screen">
-      <section className="py-section-lg px-6">
-        <div className="mx-auto max-w-content">
-          <h1 className="text-h1 font-semibold text-neutral-900">
-            What We Do
-          </h1>
-          <p className="mt-6 max-w-3xl text-body-lg text-neutral-600">
-            We deliver exceptional results through a combination of innovative approaches,
-            rigorous analysis, and cutting-edge technology.
-          </p>
-        </div>
-      </section>
+### Permanent Search
+Main description: "This is our most common recruitment process and enables us to fully understand what you require in your next hire and allows you to know how we will find the top talent you require."
 
-      <section className="py-section px-6 border-t border-neutral-200">
-        <div className="mx-auto max-w-container">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {services.map((service, index) => (
-              <Card
-                key={index}
-                className="border border-neutral-200 p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
-              >
-                <h3 className="text-h3 font-semibold mb-3 text-neutral-900">
-                  {service.title}
-                </h3>
-                <p className="text-body text-neutral-600">
-                  {service.description}
-                </p>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+**Six steps with detailed descriptions:**
 
-      <section className="py-section px-6 border-t border-neutral-200">
-        <div className="mx-auto max-w-content">
-          <h2 className="text-h2 font-semibold mb-6 text-neutral-900">
-            How We Work
-          </h2>
-          <div className="space-y-8">
-            <div className="flex gap-6">
-              <div className="flex-shrink-0">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-neutral-900 text-white text-h3 font-bold">
-                  1
-                </div>
-              </div>
-              <div>
-                <h3 className="text-h3 font-semibold mb-2 text-neutral-900">
-                  Research & Analysis
-                </h3>
-                <p className="text-body text-neutral-700 leading-relaxed">
-                  We begin with comprehensive research and rigorous analysis to understand
-                  the landscape and identify opportunities.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-6">
-              <div className="flex-shrink-0">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-neutral-900 text-white text-h3 font-bold">
-                  2
-                </div>
-              </div>
-              <div>
-                <h3 className="text-h3 font-semibold mb-2 text-neutral-900">
-                  Strategy Development
-                </h3>
-                <p className="text-body text-neutral-700 leading-relaxed">
-                  We develop tailored strategies that align with client objectives and
-                  market conditions.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-6">
-              <div className="flex-shrink-0">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-neutral-900 text-white text-h3 font-bold">
-                  3
-                </div>
-              </div>
-              <div>
-                <h3 className="text-h3 font-semibold mb-2 text-neutral-900">
-                  Execution & Monitoring
-                </h3>
-                <p className="text-body text-neutral-700 leading-relaxed">
-                  We execute with precision and continuously monitor performance, making
-                  adjustments as needed.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  )
-}
-```
+1. **Discovery**
+   - Examine organisation's history, mission, vision, strategy, structure, and culture
+   - Define needs, provide perspectives, challenge assumptions
+   - Create tailored candidate specifications
+   - Confirm search strategy and timelines
+
+2. **Identification**
+   - Focused research using existing talent network
+   - Market mapping for passive candidates
+   - Promote role across digital job boards and social media
+   - Present long-list candidate report
+
+3. **Screening**
+   - Screen candidates for experience and suitability
+   - In-person interviews for technical skills and cultural fit
+   - Perform preliminary background checks
+
+4. **Review and Assessment**
+   - Present short-listed candidates with full breakdown
+   - Help with candidate selection for interview
+   - Provide interview briefing packages
+   - Coordinate all interviews
+   - Attend panel interviews if requested
+
+5. **Hiring**
+   - Finalise pre-employment checks
+   - Facilitate offer negotiations
+   - Confirm commencement date
+   - Help with resignation process
+   - Advise unsuccessful candidates with feedback
+
+6. **Commencing and review**
+   - Prepare candidate to start
+   - Check in during notice period
+   - Remain in contact for six months after commencement
+
+### Retained Search
+Description: "Our Retained Search service provides a dedicated and prioritised approach to securing the right talent for critical roles. By working exclusively with you, we commit the time and resources needed to conduct a thorough, tailored search, ensuring access to the highest-quality candidates in the market. Regular sourcing updates and reviews throughout the process ensure that you see the entire market and what suits your needs best."
+
+### Bespoke Recruitment Solutions
+Description: "Our Bespoke Recruitment Solutions are designed to give you flexibility and choice beyond traditional search methods. Whether you require project-based hiring, talent mapping, market insights, or a tailored recruitment campaign, we build solutions around your specific needs. By combining industry expertise, innovative sourcing strategies, and a consultative approach, we deliver the outcomes that you require. Our consultants have experience in mass recruitment campaigns, executive search and through tailored recruitment campaigns, with their finger on the pulse in the market they can provide accurate and up to date market analysis and insights."
 
 ---
 
-## Step 3: Add Page Metadata
+## Step 3: Create Vacancies Page
 
-Update both pages with proper metadata:
+Create `app/vacancies/page.tsx`:
+
+**Structure:**
+- Hero section with title "Current roles we're recruiting"
+- Subtitle: "If you can't see a vacancy that interests you, register your ideal role and we will be in touch."
+- List of current job vacancies
+
+**Content - Vacancies:**
+
+1. **Sales Executive**
+   - Location: Melbourne
+   - Compensation: $85,000 plus super plus comms
+   - Sector: Logistics
+
+2. **Business Development Manager**
+   - Location: S.E Melbourne
+   - Compensation: $100,000 - $120,000 plus super plus comms
+   - Sector: FMCG
+
+3. **Account Manager**
+   - Location: Melbourne
+   - Compensation: Uncapped comms
+   - Sector: Logistics
+
+**Design:**
+- Each vacancy should be displayed as a card or list item
+- Include all details: title, location, compensation, sector
+- Consider making them clickable/expandable for future detail pages
+
+---
+
+## Step 4: Add Page Metadata
+
+Update all pages with proper metadata:
 
 **About page** (`app/about/page.tsx`):
-
 ```typescript
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About Us | Your Site Name',
-  description: 'Learn about our mission, values, and the people behind our success.',
-}
-
-export default function AboutPage() {
-  // ... component code
+  title: 'About Us | Hunters and Farmers',
+  description: 'Learn about Hunters and Farmers - simple, effective recruitment focused on connecting great sales professionals with businesses.',
 }
 ```
 
 **Services page** (`app/services/page.tsx`):
-
 ```typescript
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Services | Your Site Name',
-  description: 'Discover our approach, services, and how we deliver value.',
+  title: 'Our Services | Hunters and Farmers',
+  description: 'Discover our recruitment services: Permanent Search, Retained Search, and Bespoke Recruitment Solutions.',
 }
+```
 
-export default function ServicesPage() {
-  // ... component code
+**Vacancies page** (`app/vacancies/page.tsx`):
+```typescript
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Current Vacancies | Hunters and Farmers',
+  description: 'View current sales roles we\'re recruiting. Register your ideal role if you don\'t see a match.',
 }
 ```
 
 ---
 
-## Step 4: Create Reusable Section Component (Optional)
+## Step 5: Update Navigation
 
-To reduce repetition, create a reusable section component:
-
-Create `components/sections/Section.tsx`:
-
-```typescript
-import { cn } from '@/lib/utils'
-
-interface SectionProps {
-  children: React.ReactNode
-  className?: string
-  containerClassName?: string
-  withBorder?: boolean
-}
-
-export function Section({
-  children,
-  className,
-  containerClassName,
-  withBorder = false,
-}: SectionProps) {
-  return (
-    <section
-      className={cn(
-        'py-section px-6',
-        withBorder && 'border-t border-neutral-200',
-        className
-      )}
-    >
-      <div className={cn('mx-auto max-w-content', containerClassName)}>
-        {children}
-      </div>
-    </section>
-  )
-}
-```
-
-Use it in pages:
-
-```typescript
-import { Section } from '@/components/sections/Section'
-
-<Section>
-  <h2 className="text-h2 font-semibold mb-6">Our Mission</h2>
-  <p className="max-w-3xl text-body text-neutral-700">
-    Content here...
-  </p>
-</Section>
-```
-
----
-
-## Step 5: Add Icons to Services (Optional)
-
-Install lucide-react if not already installed:
-
-```bash
-bun add lucide-react
-```
-
-Add icons to service cards:
-
-```typescript
-import { TrendingUp, Code, Shield, Lightbulb } from 'lucide-react'
-
-const services = [
-  {
-    title: 'Investment Approach',
-    description: '...',
-    icon: TrendingUp,
-  },
-  {
-    title: 'Technology',
-    description: '...',
-    icon: Code,
-  },
-  {
-    title: 'Risk Management',
-    description: '...',
-    icon: Shield,
-  },
-  {
-    title: 'Entrepreneurship',
-    description: '...',
-    icon: Lightbulb,
-  },
-]
-
-// In component:
-<Card>
-  <Icon className="mb-6 h-8 w-8 text-neutral-600" />
-  <h3>...</h3>
-  <p>...</p>
-</Card>
-```
+Update the Header navigation to include Vacancies link if needed, or keep it as is (Home, About, Services, Contact).
 
 ---
 
 ## Checklist
 
-- [ ] About page created with proper structure
-- [ ] About page has hero section with title and intro
-- [ ] About page has content sections (Mission, Principles, etc.)
-- [ ] Services page created with proper structure
-- [ ] Services page has hero section
-- [ ] Services page has service cards grid
-- [ ] Services page has "How We Work" section with numbered steps
+- [ ] About page created with "About us" title
+- [ ] About page has main intro copy
+- [ ] "What We Recruit" section created with roles in TWO COLUMNS
+- [ ] Services page created with "Our Services" title
+- [ ] Permanent Search section with all 6 steps detailed
+- [ ] Retained Search section added
+- [ ] Bespoke Recruitment Solutions section added
+- [ ] Vacancies page created
+- [ ] Vacancies displayed with all details (title, location, compensation, sector)
 - [ ] Page metadata added for SEO
 - [ ] Responsive design works on all breakpoints
 - [ ] Typography hierarchy is correct
 - [ ] Spacing is consistent (py-section, py-section-lg)
-- [ ] Icons added to services (optional)
-- [ ] Reusable Section component created (optional)
+- [ ] Two-column layout for "What We Recruit" works on mobile
 
 ---
 
@@ -377,10 +211,18 @@ const services = [
 - **Body text**: `text-body text-neutral-700 leading-relaxed`
 - **Spacing**: `space-y-6` or `space-y-8` between items
 
-### Service Cards
-- **Layout**: `grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8`
-- **Cards**: `border border-neutral-200 rounded-lg p-8`
-- **Hover**: `hover:shadow-lg hover:-translate-y-1 transition-all duration-300`
+### Two-Column Layout
+- **"What We Recruit"**: Use `grid grid-cols-1 md:grid-cols-2 gap-4` for responsive two-column layout
+- **Mobile**: Single column
+- **Desktop**: Two columns
+
+### Service Steps
+- **Permanent Search steps**: Can use numbered list or accordion-style sections
+- **Each step**: Clear heading and detailed bullet points or paragraphs
+
+### Vacancies
+- **Layout**: Cards or list items with clear hierarchy
+- **Information**: Title, location, compensation, sector clearly displayed
 
 ---
 
@@ -390,7 +232,7 @@ Once Phase 5 is complete, commit your changes:
 
 ```bash
 git add .
-git commit -m "Phase 5: Content pages complete - About and Services pages built"
+git commit -m "Phase 5: Content pages complete - About, Services, and Vacancies pages built"
 git push
 ```
 
@@ -410,6 +252,8 @@ Once Phase 5 is complete, proceed to **Phase 6: Contact Page** (`phase-6-contact
 **Issue**: Sections too close together
 - **Solution**: Ensure `py-section` (96px) spacing between sections
 
-**Issue**: Service cards not aligning properly
-- **Solution**: Check grid classes and ensure cards have consistent height
+**Issue**: Two-column layout not working properly
+- **Solution**: Use `grid grid-cols-1 md:grid-cols-2` for responsive two-column layout
 
+**Issue**: Service steps too long
+- **Solution**: Consider using accordion or collapsible sections for better UX

@@ -3,10 +3,10 @@ import { Stats } from '@/components/sections/Stats'
 import { PreviewCards } from '@/components/sections/PreviewCards'
 
 const stats = [
-  { value: '35+', label: 'Years of Evolution' },
-  { value: '$81BN+', label: 'AUM' },
-  { value: '6,400+', label: 'Employees Globally' },
-  { value: '140+', label: 'Employee Locations' },
+  { value: '16+', label: 'Sales Roles We Recruit' },
+  { value: 'All Levels', label: 'From Admin to Director' },
+  { value: 'Sales Experience', label: 'Our Consultants Know Sales' },
+  { value: 'Simple & Effective', label: 'Focused on What Works' },
 ]
 
 const previewCards = [
