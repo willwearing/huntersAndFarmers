@@ -353,6 +353,18 @@ export function Hero() {
 
 ---
 
+## Step 8: Commit Changes
+
+Once Phase 4 is complete, commit your changes:
+
+```bash
+git add .
+git commit -m "Phase 4: Home page complete - Hero, Stats, and Preview sections built"
+git push
+```
+
+---
+
 ## Next Steps
 
 Once Phase 4 is complete, proceed to **Phase 5: Content Pages** (`phase-5-content-pages.md`) to build the About and Services pages.

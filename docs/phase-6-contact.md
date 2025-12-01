@@ -404,6 +404,18 @@ Add to ContactInfo component or as a separate section.
 
 ---
 
+## Step 8: Commit Changes
+
+Once Phase 6 is complete, commit your changes:
+
+```bash
+git add .
+git commit -m "Phase 6: Contact page complete - Contact form and info sections built"
+git push
+```
+
+---
+
 ## Next Steps
 
 Once Phase 6 is complete, proceed to **Phase 7: Polish & Launch** (`phase-7-polish-launch.md`) for final polish, optimization, testing, and deployment.

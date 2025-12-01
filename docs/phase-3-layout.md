@@ -402,6 +402,18 @@ import { NavLink } from './NavLink'
 
 ---
 
+## Step 7: Commit Changes
+
+Once Phase 3 is complete, commit your changes:
+
+```bash
+git add .
+git commit -m "Phase 3: Core layout complete - Header and Footer components built"
+git push
+```
+
+---
+
 ## Next Steps
 
 Once Phase 3 is complete, proceed to **Phase 4: Home Page** (`phase-4-home-page.md`) to build the hero section, stats, and preview sections.

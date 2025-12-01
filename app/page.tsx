@@ -1,17 +1,39 @@
+import { Hero } from '@/components/sections/Hero'
+import { Stats } from '@/components/sections/Stats'
+import { PreviewCards } from '@/components/sections/PreviewCards'
+
+const stats = [
+  { value: '35+', label: 'Years of Evolution' },
+  { value: '$81BN+', label: 'AUM' },
+  { value: '6,400+', label: 'Employees Globally' },
+  { value: '140+', label: 'Employee Locations' },
+]
+
+const previewCards = [
+  {
+    title: 'Who We Are',
+    description: 'Learn about our mission, values, and the people behind our success.',
+    href: '/about',
+  },
+  {
+    title: 'What We Do',
+    description: 'Discover our approach, services, and how we deliver value.',
+    href: '/services',
+  },
+  {
+    title: 'Contact Us',
+    description: 'Get in touch with our team to learn more.',
+    href: '/contact',
+  },
+]
+
 export default function Home() {
   return (
-    <div className="min-h-screen">
-      <div className="py-section-xl px-6">
-        <div className="mx-auto max-w-container">
-          <h1 className="text-hero font-semibold text-neutral-900">
-            Welcome
-          </h1>
-          <p className="mt-6 text-body-lg text-neutral-600">
-            Your landing page content will go here.
-          </p>
-        </div>
-      </div>
-    </div>
+    <>
+      <Hero />
+      <Stats stats={stats} />
+      <PreviewCards cards={previewCards} />
+    </>
   )
 }
 

@@ -509,6 +509,18 @@ Add Google Analytics or Plausible:
 
 ---
 
+## Step 9: Final Commit
+
+Once Phase 7 is complete and the site is deployed, commit your final changes:
+
+```bash
+git add .
+git commit -m "Phase 7: Polish and launch complete - Site optimized, tested, and deployed"
+git push
+```
+
+---
+
 ## Congratulations!
 
 Your landing page is now complete and deployed. Monitor performance, gather feedback, and iterate as needed.

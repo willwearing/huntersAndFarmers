@@ -345,6 +345,18 @@ If you want to customize shadcn/ui components to match the design system, update
 
 ---
 
+## Step 7: Commit Changes
+
+Once Phase 2 is complete, commit your changes:
+
+```bash
+git add .
+git commit -m "Phase 2: Design system foundation complete - Colors, typography, spacing configured"
+git push
+```
+
+---
+
 ## Next Steps
 
 Once Phase 2 is complete, proceed to **Phase 3: Core Layout** (`phase-3-layout.md`) to build the Header and Footer components.

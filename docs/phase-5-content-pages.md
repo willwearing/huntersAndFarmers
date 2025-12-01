@@ -384,6 +384,18 @@ const services = [
 
 ---
 
+## Step 6: Commit Changes
+
+Once Phase 5 is complete, commit your changes:
+
+```bash
+git add .
+git commit -m "Phase 5: Content pages complete - About and Services pages built"
+git push
+```
+
+---
+
 ## Next Steps
 
 Once Phase 5 is complete, proceed to **Phase 6: Contact Page** (`phase-6-contact.md`) to build the contact form and contact information.

@@ -233,6 +233,18 @@ Update `tsconfig.json` to include path aliases:
 
 ---
 
+## Step 10: Commit Changes
+
+Once Phase 1 is complete, commit your changes:
+
+```bash
+git add .
+git commit -m "Phase 1: Project setup complete - Next.js, Tailwind, Vitest, shadcn/ui configured"
+git push
+```
+
+---
+
 ## Next Steps
 
 Once Phase 1 is complete, proceed to **Phase 2: Design System Foundation** (`phase-2-design-system.md`) to set up the complete Tailwind configuration with colors, typography, and spacing.
