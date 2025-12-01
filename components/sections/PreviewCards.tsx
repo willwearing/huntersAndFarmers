@@ -51,7 +51,7 @@ export function PreviewCards({ cards }: PreviewCardsProps) {
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-                transition={{ duration: 0.5, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.5, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] as const }}
               >
                 <Link href={card.href} className="group block">
                   <div className="relative glass-card p-8 glow-border transition-all duration-300 hover:-translate-y-1 hover:bg-surface-800/70">

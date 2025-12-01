@@ -59,7 +59,7 @@ export function CountUpText({ text, className = '' }: CountUpTextProps) {
       className={className}
       initial={{ opacity: 0, y: 10 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
-      transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+      transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] as const }}
     >
       {text}
     </motion.span>

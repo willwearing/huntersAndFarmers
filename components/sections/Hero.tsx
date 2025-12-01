@@ -26,7 +26,7 @@ export function Hero() {
           <motion.h1
             initial={{ opacity: 0, y: 30, filter: 'blur(10px)' }}
             animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-            transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] as const }}
             className="text-4xl md:text-6xl lg:text-hero font-bold text-surface-50 leading-tight"
           >
             Connecting great sales professionals with{' '}
@@ -36,7 +36,7 @@ export function Hero() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.6, delay: 0.5, ease: [0.16, 1, 0.3, 1] as const }}
             className="mt-6 text-lg md:text-xl text-surface-400 max-w-2xl mx-auto font-body"
           >
             We keep recruitment simple, effective, and focused on what works. Our consultants have worked in sales themselves, so they know what it takes to succeed.
@@ -45,7 +45,7 @@ export function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.6, delay: 0.7, ease: [0.16, 1, 0.3, 1] as const }}
             className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <Link

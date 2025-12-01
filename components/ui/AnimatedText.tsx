@@ -1,7 +1,9 @@
 'use client'
 
-import { motion, useInView } from 'framer-motion'
+import { motion, useInView, type Variants } from 'framer-motion'
 import { useRef } from 'react'
+
+const easeOutExpo = [0.16, 1, 0.3, 1] as const
 
 interface AnimatedTextProps {
   children: string
@@ -22,7 +24,7 @@ export function AnimatedText({ children, className = '', delay = 0, as: Componen
       className={className}
       initial={{ opacity: 0, y: 20, filter: 'blur(10px)' }}
       animate={isInView ? { opacity: 1, y: 0, filter: 'blur(0px)' } : { opacity: 0, y: 20, filter: 'blur(10px)' }}
-      transition={{ duration: 0.6, delay, ease: [0.16, 1, 0.3, 1] }}
+      transition={{ duration: 0.6, delay, ease: easeOutExpo }}
     >
       {children}
     </MotionComponent>
@@ -43,7 +45,7 @@ export function AnimatedWords({ children, className = '', delay = 0, as: Compone
 
   const MotionComponent = motion.create(Component)
 
-  const container = {
+  const container: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -51,12 +53,12 @@ export function AnimatedWords({ children, className = '', delay = 0, as: Compone
     },
   }
 
-  const child = {
+  const child: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.4, ease: [0.16, 1, 0.3, 1] },
+      transition: { duration: 0.4, ease: easeOutExpo },
     },
   }
 
@@ -76,4 +78,3 @@ export function AnimatedWords({ children, className = '', delay = 0, as: Compone
     </MotionComponent>
   )
 }
-
