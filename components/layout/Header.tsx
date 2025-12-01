@@ -17,7 +17,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-neutral-200 bg-white/95 backdrop-blur-sm">
-      <nav className="mx-auto flex max-w-container items-center justify-between px-6 py-4">
+      <nav className="mx-auto flex max-w-container items-center justify-between px-6 py-4" aria-label="Main navigation">
         <div className="flex items-center">
           <Link href="/" className="text-xl font-semibold text-neutral-900">
             Your Logo

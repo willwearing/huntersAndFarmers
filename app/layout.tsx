@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import { JetBrains_Mono } from 'next/font/google'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
+import { getOrganizationSchema } from '@/lib/structured-data'
 import '../styles/globals.css'
 
 const inter = Inter({
@@ -18,8 +19,26 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Your Site Name',
-  description: 'Your site description',
+  title: {
+    default: 'Hunters and Farmers',
+    template: '%s | Hunters and Farmers',
+  },
+  description: 'Simple, effective recruitment focused on connecting great sales professionals with businesses. Our consultants have worked in sales themselves.',
+  keywords: ['recruitment', 'sales recruitment', 'sales jobs', 'Melbourne recruitment', 'sales professionals'],
+  authors: [{ name: 'Hunters and Farmers' }],
+  openGraph: {
+    type: 'website',
+    locale: 'en_AU',
+    url: 'https://huntersandfarmers.com',
+    siteName: 'Hunters and Farmers',
+    title: 'Hunters and Farmers',
+    description: 'Simple, effective recruitment focused on connecting great sales professionals with businesses.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Hunters and Farmers',
+    description: 'Simple, effective recruitment focused on connecting great sales professionals with businesses.',
+  },
 }
 
 export default function RootLayout({
@@ -30,6 +49,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <body className="font-sans antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(getOrganizationSchema()),
+          }}
+        />
         <Header />
         <main>{children}</main>
         <Footer />

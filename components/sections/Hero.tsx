@@ -3,7 +3,7 @@ export function Hero() {
     <section className="min-h-screen flex items-center py-section-xl px-6">
       <div className="mx-auto max-w-container w-full">
         <div className="max-w-4xl">
-          <h1 className="text-hero font-semibold text-neutral-900">
+          <h1 className="text-4xl md:text-hero font-semibold text-neutral-900">
             Connecting great sales professionals with businesses
           </h1>
           <p className="mt-6 text-body-lg text-neutral-600 max-w-3xl">
