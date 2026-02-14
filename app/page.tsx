@@ -3,26 +3,26 @@ import { Stats } from '@/components/sections/Stats'
 import { PreviewCards } from '@/components/sections/PreviewCards'
 
 const stats = [
-  { value: '16+', label: 'Sales Roles We Recruit' },
-  { value: 'All Levels', label: 'From Admin to Director' },
-  { value: 'Sales Experience', label: 'Our Consultants Know Sales' },
-  { value: 'Simple & Effective', label: 'Focused on What Works' },
+  { value: 'Australia-wide', label: 'National search capability' },
+  { value: '16+ Roles', label: 'Individual contributor to leadership' },
+  { value: 'Sales + RevOps', label: 'Commercial hiring focus' },
+  { value: 'Brief to shortlist', label: 'Structured hiring process' },
 ]
 
 const previewCards = [
   {
-    title: 'Who We Are',
-    description: 'Learn about our mission, values, and the people behind our success.',
-    href: '/about',
+    title: 'For Employers',
+    description: 'See the role coverage, hiring process, and support model for commercial teams.',
+    href: '/employers',
   },
   {
-    title: 'What We Do',
-    description: 'Discover our approach, services, and how we deliver value.',
+    title: 'Our Services',
+    description: 'Review permanent, retained, and bespoke recruitment options.',
     href: '/services',
   },
   {
-    title: 'Contact Us',
-    description: 'Get in touch with our team to learn more.',
+    title: 'Contact',
+    description: 'Book a hiring brief call and align on your role requirements.',
     href: '/contact',
   },
 ]
@@ -36,4 +36,3 @@ export default function Home() {
     </>
   )
 }
-
