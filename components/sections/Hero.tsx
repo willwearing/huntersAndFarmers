@@ -48,7 +48,7 @@ export function Hero() {
             className="mt-10 flex items-center justify-center"
           >
             <Link
-              href="https://calendly.com/huntersandfarmers"
+              href="/contact"
               className="group relative px-8 py-4 bg-accent text-white font-semibold rounded-xl overflow-hidden transition-all hover:shadow-glow hover:scale-105"
             >
               <span className="relative z-10 flex items-center gap-2">

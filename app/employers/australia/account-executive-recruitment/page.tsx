@@ -12,14 +12,14 @@ export default function AccountExecutiveRecruitmentPage() {
         <div className="mt-10 flex flex-wrap gap-3">
           <Link href="/employers/australia" className="rounded-lg border border-surface-700 px-4 py-2 text-surface-200 hover:border-accent/60">Australia hub</Link>
           <Link href="/employers/australia/melbourne" className="rounded-lg border border-surface-700 px-4 py-2 text-surface-200 hover:border-accent/60">Melbourne hiring</Link>
-          <Link href="https://calendly.com/huntersandfarmers" className="rounded-lg border border-accent/70 px-4 py-2 text-surface-100">Book a call</Link>
+          <Link href="/contact" className="rounded-lg border border-accent/70 px-4 py-2 text-surface-100">Book a call</Link>
         </div>
 
         <section className="mt-16 rounded-xl border border-surface-800 bg-surface-900/50 p-6">
           <h2 className="text-xl font-semibold text-surface-100">Ready to hire?</h2>
           <p className="mt-2 text-surface-300 font-body">Book a quick call and we can align on role scope, timeline, and the shortlist approach.</p>
           <div className="mt-4">
-            <Link href="https://calendly.com/huntersandfarmers" className="inline-flex rounded-lg border border-accent/70 px-4 py-2 text-surface-100">Book a call</Link>
+            <Link href="/contact" className="inline-flex rounded-lg border border-accent/70 px-4 py-2 text-surface-100">Book a call</Link>
           </div>
         </section>
       </article>
