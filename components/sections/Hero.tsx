@@ -52,7 +52,7 @@ export function Hero() {
               className="group relative px-8 py-4 bg-accent text-white font-semibold rounded-xl overflow-hidden transition-all hover:shadow-glow hover:scale-105"
             >
               <span className="relative z-10 flex items-center gap-2">
-                Book a hiring brief call
+                Book a call
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </span>
             </Link>
