@@ -78,7 +78,7 @@ Lead with the specific role and market context:
 - Offer a short hiring brief call
 - Position around speed, quality, and role-fit
 
-Primary CTA: **Book a hiring brief call**
+Primary CTA: **Book a call**
 
 ## Weekly Operating Cadence
 1. Refresh target list from free job sources

@@ -22,7 +22,7 @@ const previewCards = [
   },
   {
     title: 'Contact',
-    description: 'Book a hiring brief call and align on your role requirements.',
+    description: 'Book a call and align on your role requirements.',
     href: '/contact',
   },
 ]

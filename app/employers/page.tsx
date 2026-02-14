@@ -35,7 +35,7 @@ export default function EmployersPage() {
               href="https://calendly.com/huntersandfarmers"
               className="inline-flex items-center rounded-xl bg-accent px-6 py-3 text-white font-semibold hover:shadow-glow transition-all"
             >
-              Book a hiring brief call
+              Book a call
             </Link>
           </div>
         </div>
