@@ -8,6 +8,7 @@ import { NavLink } from './NavLink'
 
 const navigation = [
   { name: 'Home', href: '/' },
+  { name: 'Employers', href: '/employers' },
   { name: 'About', href: '/about' },
   { name: 'Services', href: '/services' },
   { name: 'Contact', href: '/contact' },

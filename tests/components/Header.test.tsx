@@ -6,6 +6,7 @@ describe('Header', () => {
   it('renders navigation links', () => {
     render(<Header />)
     expect(screen.getByText('Home')).toBeInTheDocument()
+    expect(screen.getByText('Employers')).toBeInTheDocument()
     expect(screen.getByText('About')).toBeInTheDocument()
     expect(screen.getByText('Services')).toBeInTheDocument()
     expect(screen.getByText('Contact')).toBeInTheDocument()
@@ -13,8 +14,7 @@ describe('Header', () => {
 
   it('renders logo link', () => {
     render(<Header />)
-    const logoLink = screen.getByText('Your Logo')
+    const logoLink = screen.getByText('Hunters & Farmers')
     expect(logoLink).toBeInTheDocument()
   })
 })
-

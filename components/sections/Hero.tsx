@@ -20,7 +20,7 @@ export function Hero() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-8"
           >
             <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-            <span className="text-sm text-surface-300">Sales recruitment specialists</span>
+            <span className="text-sm text-surface-300">Australia-wide sales recruitment for employers</span>
           </motion.div>
 
           <motion.h1
@@ -29,8 +29,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] as const }}
             className="text-4xl md:text-6xl lg:text-hero font-bold text-surface-50 leading-tight"
           >
-            Connecting great sales professionals with{' '}
-            <span className="text-gradient">businesses</span>
+            Hire proven sales talent across <span className="text-gradient">Australia</span>
           </motion.h1>
 
           <motion.p
@@ -39,29 +38,23 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.5, ease: [0.16, 1, 0.3, 1] as const }}
             className="mt-6 text-lg md:text-xl text-surface-400 max-w-2xl mx-auto font-body"
           >
-            We keep recruitment simple, effective, and focused on what works. Our consultants have worked in sales themselves, so they know what it takes to succeed.
+            From SDRs and Account Executives through to Sales Leaders and Revenue Operations, we help employers run efficient hiring searches without unnecessary complexity.
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.7, ease: [0.16, 1, 0.3, 1] as const }}
-            className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="mt-10 flex items-center justify-center"
           >
             <Link
               href="/contact"
               className="group relative px-8 py-4 bg-accent text-white font-semibold rounded-xl overflow-hidden transition-all hover:shadow-glow hover:scale-105"
             >
               <span className="relative z-10 flex items-center gap-2">
-                Get in touch
+                Book a hiring brief call
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </span>
-            </Link>
-            <Link
-              href="/services"
-              className="px-8 py-4 text-surface-300 font-medium hover:text-surface-50 transition-colors"
-            >
-              Learn more
             </Link>
           </motion.div>
         </div>
