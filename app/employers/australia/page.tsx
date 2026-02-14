@@ -31,7 +31,7 @@ export default function AustraliaSalesRecruitmentPage() {
           <Link href="/employers/australia/bdr-recruitment" className="rounded-lg border border-surface-700 px-4 py-2 text-surface-200 hover:border-accent/60">BDR recruitment</Link>
           <Link href="/employers/australia/revops-recruitment" className="rounded-lg border border-surface-700 px-4 py-2 text-surface-200 hover:border-accent/60">RevOps recruitment</Link>
           <Link href="/employers/australia/customer-success-manager-recruitment" className="rounded-lg border border-surface-700 px-4 py-2 text-surface-200 hover:border-accent/60">CSM recruitment</Link>
-          <Link href="/contact" className="rounded-lg border border-accent/70 px-4 py-2 text-surface-100">Book a hiring brief call</Link>
+          <Link href="https://calendly.com/huntersandfarmers" className="rounded-lg border border-accent/70 px-4 py-2 text-surface-100">Book a hiring brief call</Link>
         </div>
       </article>
     </main>
