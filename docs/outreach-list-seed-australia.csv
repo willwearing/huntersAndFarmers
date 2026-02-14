@@ -1,0 +1,26 @@
+company,website,hq_city,industry,active_hiring_signal,role_keywords_seen,recruiter_signal,next_action,priority
+SafetyCulture,https://safetyculture.com,Sydney,SaaS,Check LinkedIn jobs: AE/BDR,"AE;BDR;Sales Manager",Unknown,Find Head of Sales and send touch 1,A
+Canva,https://canva.com,Sydney,SaaS,Check careers for ANZ sales roles,"AE;CSM;Partnerships",Unknown,Map talent + sales leadership contacts,A
+Employment Hero,https://employmenthero.com,Sydney,SaaS,Check open B2B sales roles,"SDR;AE;AM",Unknown,Run recruiter-signal check,A
+Deputy,https://deputy.com,Sydney,SaaS,Check enterprise AE openings,"Enterprise AE;AM",Unknown,Build tailored message on hiring velocity,A
+Eucalyptus,https://eucalyptus.vc,Sydney,Healthtech,Check commercial hiring pages,"Growth;BD",Unknown,Validate decision-maker contacts,B
+Nexthink ANZ,https://nexthink.com,Sydney,Enterprise SaaS,Check ANZ sales openings,"AE;SE;CSM",Unknown,Identify ANZ hiring manager,B
+Airwallex,https://airwallex.com,Melbourne,Fintech,Check AU sales postings,"AE;Partnerships;AM",Unknown,Prioritize if 2+ active roles,A
+Culture Amp,https://cultureamp.com,Melbourne,SaaS,Check GTM roles in AU,"AE;CSM;RevOps",Unknown,Build role-specific outreach,A
+Carsales,https://carsales.com.au,Melbourne,Marketplace,Check B2B sales roles,"AM;Sales Manager",Unknown,Assess recruiter usage,B
+Seek,https://seek.com.au,Melbourne,HR Tech,Check enterprise sales hiring,"AE;Partnerships",Unknown,Target hiring manager + talent lead,B
+Xero AU,https://xero.com,Melbourne,Fintech SaaS,Check SMB/MM sales roles,"AE;AM;CSM",Unknown,Prepare benchmark-led outreach,B
+MYOB,https://myob.com,Melbourne,Fintech SaaS,Check roles in revenue org,"BDR;AE;AM",Unknown,Enrich contact list,B
+Go1,https://go1.com,Brisbane,SaaS,Check growth sales hiring,"BDR;AE",Unknown,Prioritize if new role <14 days,A
+Askable,https://askable.com,Brisbane,SaaS,Check commercial team openings,"AE;AM",Unknown,Research hiring urgency,B
+Shippit,https://shippit.com,Sydney,SaaS,Check enterprise growth roles,"AE;CSM",Unknown,Add to wave 2,B
+Sonder,https://sonder.io,Melbourne,Healthtech,Check B2B commercial hiring,"Partnerships;AE",Unknown,Run recruiter signal checks,B
+Airtasker,https://airtasker.com,Sydney,Marketplace,Check B2B sales openings,"AM;Partnerships",Unknown,Assess fit for outreach,C
+Immutable,https://immutable.com,Sydney,Web3,Check growth/commercial hiring,"Partnerships;BD",Unknown,Evaluate role relevance,C
+Who Gives A Crap B2B,https://au.whogivesacrap.org,Melbourne,Ecommerce/B2B,Check account/commercial hiring,"AM;Partnerships",Unknown,Add if active roles found,C
+Rokt,https://rokt.com,Sydney,SaaS,Check enterprise sales roles,"Enterprise AE;Sales Manager",Unknown,Enrich VP Sales contacts,A
+Atlassian AU,https://atlassian.com,Sydney,Software,Check AU enterprise sales roles,"AE;CSM;RevOps",Unknown,Use for credibility benchmark,C
+Prospa,https://prospa.com,Sydney,Fintech,Check B2B sales hiring,"AE;AM",Unknown,Prioritize if hiring now,B
+Deputec (example placeholder),https://example.com,Perth,B2B Services,Find active sales job ads,"Sales Rep;BDM",Unknown,Replace with verified Perth target,B
+Adelaide-based SaaS #1,https://example.com,Adelaide,SaaS,Find active sales job ads,"AE;CSM",Unknown,Replace with verified Adelaide target,B
+Perth-based SaaS #2,https://example.com,Perth,SaaS,Find active sales job ads,"BDR;AE",Unknown,Replace with verified Perth target,B

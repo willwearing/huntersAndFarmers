@@ -21,8 +21,16 @@ export default function AustraliaSalesRecruitmentPage() {
         <h2 className="mt-12 text-2xl font-semibold text-surface-100">Related pages</h2>
         <div className="mt-4 flex flex-wrap gap-3">
           <Link href="/employers" className="rounded-lg border border-surface-700 px-4 py-2 text-surface-200 hover:border-accent/60">For Employers</Link>
-          <Link href="/employers/australia/sydney" className="rounded-lg border border-surface-700 px-4 py-2 text-surface-200 hover:border-accent/60">Sydney sales recruitment</Link>
+          <Link href="/employers/australia/sydney" className="rounded-lg border border-surface-700 px-4 py-2 text-surface-200 hover:border-accent/60">Sydney</Link>
+          <Link href="/employers/australia/melbourne" className="rounded-lg border border-surface-700 px-4 py-2 text-surface-200 hover:border-accent/60">Melbourne</Link>
+          <Link href="/employers/australia/brisbane" className="rounded-lg border border-surface-700 px-4 py-2 text-surface-200 hover:border-accent/60">Brisbane</Link>
+          <Link href="/employers/australia/perth" className="rounded-lg border border-surface-700 px-4 py-2 text-surface-200 hover:border-accent/60">Perth</Link>
+          <Link href="/employers/australia/adelaide" className="rounded-lg border border-surface-700 px-4 py-2 text-surface-200 hover:border-accent/60">Adelaide</Link>
           <Link href="/employers/australia/sales-manager-recruitment" className="rounded-lg border border-surface-700 px-4 py-2 text-surface-200 hover:border-accent/60">Sales Manager recruitment</Link>
+          <Link href="/employers/australia/account-executive-recruitment" className="rounded-lg border border-surface-700 px-4 py-2 text-surface-200 hover:border-accent/60">Account Executive recruitment</Link>
+          <Link href="/employers/australia/bdr-recruitment" className="rounded-lg border border-surface-700 px-4 py-2 text-surface-200 hover:border-accent/60">BDR recruitment</Link>
+          <Link href="/employers/australia/revops-recruitment" className="rounded-lg border border-surface-700 px-4 py-2 text-surface-200 hover:border-accent/60">RevOps recruitment</Link>
+          <Link href="/employers/australia/customer-success-manager-recruitment" className="rounded-lg border border-surface-700 px-4 py-2 text-surface-200 hover:border-accent/60">CSM recruitment</Link>
           <Link href="/contact" className="rounded-lg border border-accent/70 px-4 py-2 text-surface-100">Book a hiring brief call</Link>
         </div>
       </article>
