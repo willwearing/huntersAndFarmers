@@ -32,7 +32,7 @@ export default function EmployersPage() {
           </p>
           <div className="mt-10">
             <Link
-              href="/contact"
+              href="https://calendly.com/huntersandfarmers"
               className="inline-flex items-center rounded-xl bg-accent px-6 py-3 text-white font-semibold hover:shadow-glow transition-all"
             >
               Book a hiring brief call
