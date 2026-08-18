@@ -14,6 +14,10 @@ const roleGroups = [
     title: 'Leadership & enablement roles',
     roles: ['Sales Manager', 'State Sales Manager', 'Head of Sales', 'Sales Director', 'Revenue Operations Manager'],
   },
+  {
+    title: 'Commercial construction roles',
+    roles: ['Project Coordinator', 'Contract Administrator', 'Project Manager', 'Site Supervisor', 'Project Director'],
+  },
 ]
 
 export default function EmployersPage() {
@@ -24,11 +28,11 @@ export default function EmployersPage() {
         <div className="relative z-10 mx-auto max-w-content">
           <span className="text-accent text-sm font-medium uppercase tracking-wider">For employers</span>
           <h1 className="mt-4 text-4xl md:text-5xl font-bold text-surface-50 max-w-3xl">
-            Australia-wide sales recruitment built around hiring outcomes
+            Australia-wide sales and construction recruitment built around hiring outcomes
           </h1>
           <p className="mt-6 text-lg text-surface-300 max-w-3xl font-body leading-relaxed">
-            We partner with hiring managers and founders to run clear, structured searches for revenue teams.
-            Our consultants have worked in sales, so we focus on role-fit, commercial impact, and speed-to-hire.
+            We partner with hiring managers and business leaders to run clear, structured searches for sales and commercial construction teams.
+            Our consultants have worked in sales and construction environments, so we focus on role fit, practical capability, and speed to hire.
           </p>
           <div className="mt-10">
             <Link
@@ -43,12 +47,12 @@ export default function EmployersPage() {
 
       <section className="py-20 px-6 bg-surface-900 border-b border-surface-800">
         <div className="mx-auto max-w-content">
-          <h2 className="text-3xl font-bold text-surface-50">Role coverage beyond SDR / AE / AM</h2>
+          <h2 className="text-3xl font-bold text-surface-50">Sales and construction role coverage</h2>
           <p className="mt-4 text-surface-400 max-w-3xl">
-            We support full-funnel hiring plans, from first sales hires through to senior leadership and RevOps.
+            We recruit from first sales hires through to senior leadership and RevOps, and from Project Coordinators through to Project Directors.
           </p>
 
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
+          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {roleGroups.map((group) => (
               <article key={group.title} className="rounded-xl border border-surface-700 bg-surface-800/50 p-6">
                 <h3 className="text-lg font-semibold text-surface-100">{group.title}</h3>
@@ -75,10 +79,10 @@ export default function EmployersPage() {
 
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="/employers/australia" className="rounded-lg border border-surface-700 px-4 py-2 text-surface-200 hover:border-accent/60">
-              Australia sales recruitment
+              Australia recruitment
             </Link>
             <Link href="/employers/australia/sydney" className="rounded-lg border border-surface-700 px-4 py-2 text-surface-200 hover:border-accent/60">
-              Sydney sales recruitment
+              Sydney recruitment
             </Link>
             <Link href="/employers/australia/sales-manager-recruitment" className="rounded-lg border border-surface-700 px-4 py-2 text-surface-200 hover:border-accent/60">
               Sales Manager recruitment

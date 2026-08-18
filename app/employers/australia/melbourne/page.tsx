@@ -1,13 +1,13 @@
 import Link from 'next/link'
 
-export default function MelbourneSalesRecruitmentPage() {
+export default function MelbourneRecruitmentPage() {
   return (
     <main className="min-h-screen px-6 py-28 bg-surface-900">
       <article className="mx-auto max-w-content">
         <p className="text-sm uppercase tracking-wider text-accent">Employers · Melbourne</p>
-        <h1 className="mt-4 text-4xl font-bold text-surface-50">Sales Recruitment in Melbourne</h1>
+        <h1 className="mt-4 text-4xl font-bold text-surface-50">Sales and Construction Recruitment in Melbourne</h1>
         <p className="mt-6 text-surface-300 max-w-3xl leading-relaxed font-body">
-          We help Melbourne companies hire revenue talent across new business, account growth, and sales leadership. We run structured briefs and targeted searches that prioritize hiring speed and fit.
+          We help Melbourne businesses hire sales and commercial construction talent, from new business and sales leadership through to contract administration, project delivery, and site supervision. We run structured briefs and targeted searches that prioritise hiring speed and fit.
         </p>
         <div className="mt-10 flex flex-wrap gap-3">
           <Link href="/employers/australia" className="rounded-lg border border-surface-700 px-4 py-2 text-surface-200 hover:border-accent/60">Australia hub</Link>

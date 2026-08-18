@@ -29,8 +29,8 @@ export const metadata: Metadata = {
     default: 'Hunters and Farmers',
     template: '%s | Hunters and Farmers',
   },
-  description: 'Simple, effective recruitment focused on connecting great sales professionals with businesses. Our consultants have worked in sales themselves.',
-  keywords: ['recruitment', 'sales recruitment', 'sales jobs', 'Melbourne recruitment', 'sales professionals'],
+  description: 'Simple, effective recruitment connecting great sales and commercial construction professionals with businesses. Our consultants have worked in sales and construction environments themselves.',
+  keywords: ['recruitment', 'sales recruitment', 'construction recruitment', 'sales jobs', 'construction jobs', 'Melbourne recruitment', 'sales professionals', 'construction professionals'],
   authors: [{ name: 'Hunters and Farmers' }],
   openGraph: {
     type: 'website',
@@ -38,12 +38,12 @@ export const metadata: Metadata = {
     url: 'https://huntersandfarmers.com',
     siteName: 'Hunters and Farmers',
     title: 'Hunters and Farmers',
-    description: 'Simple, effective recruitment focused on connecting great sales professionals with businesses.',
+    description: 'Simple, effective recruitment connecting great sales and commercial construction professionals with businesses.',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Hunters and Farmers',
-    description: 'Simple, effective recruitment focused on connecting great sales professionals with businesses.',
+    description: 'Simple, effective recruitment connecting great sales and commercial construction professionals with businesses.',
   },
 }
 
