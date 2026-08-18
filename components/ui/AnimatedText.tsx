@@ -4,6 +4,13 @@ import { motion, useInView, type Variants } from 'framer-motion'
 import { useRef } from 'react'
 
 const easeOutExpo = [0.16, 1, 0.3, 1] as const
+const motionComponents = {
+  h1: motion.h1,
+  h2: motion.h2,
+  h3: motion.h3,
+  p: motion.p,
+  span: motion.span,
+}
 
 interface AnimatedTextProps {
   children: string
@@ -15,8 +22,7 @@ interface AnimatedTextProps {
 export function AnimatedText({ children, className = '', delay = 0, as: Component = 'p' }: AnimatedTextProps) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
-
-  const MotionComponent = motion.create(Component)
+  const MotionComponent = motionComponents[Component]
 
   return (
     <MotionComponent
@@ -43,7 +49,7 @@ export function AnimatedWords({ children, className = '', delay = 0, as: Compone
   const isInView = useInView(ref, { once: true, margin: '-100px' })
   const words = children.split(' ')
 
-  const MotionComponent = motion.create(Component)
+  const MotionComponent = motionComponents[Component]
 
   const container: Variants = {
     hidden: { opacity: 0 },

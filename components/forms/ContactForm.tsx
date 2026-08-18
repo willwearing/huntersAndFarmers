@@ -9,6 +9,7 @@ import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
 import { motion } from 'framer-motion'
 import { Send, Loader2 } from 'lucide-react'
+import posthog from 'posthog-js'
 
 export function ContactForm() {
   const {
@@ -22,9 +23,15 @@ export function ContactForm() {
 
   const onSubmit = async (data: ContactFormData) => {
     try {
+      const distinctId = posthog.get_distinct_id()
       const response = await fetch('/api/contact', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          ...(distinctId
+            ? { 'X-PostHog-Distinct-Id': distinctId }
+            : {}),
+        },
         body: JSON.stringify(data),
       })
 
@@ -34,7 +41,10 @@ export function ContactForm() {
 
       alert('Message sent successfully!')
       reset()
-    } catch {
+    } catch (error) {
+      posthog.captureException(error, {
+        source: 'website_contact_form',
+      })
       alert('Failed to send message. Please try again.')
     }
   }
