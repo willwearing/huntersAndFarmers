@@ -5,6 +5,7 @@ import { GradientBackground } from '@/components/ui/GradientBackground'
 import { ScrollIndicator } from '@/components/ui/ScrollIndicator'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
+import posthog from 'posthog-js'
 
 export function Hero() {
   return (
@@ -50,6 +51,7 @@ export function Hero() {
             <Link
               href="https://calendly.com/huntersandfarmers"
               className="group relative px-8 py-4 bg-accent text-white font-semibold rounded-xl overflow-hidden transition-all hover:shadow-glow hover:scale-105"
+              onClick={() => posthog.capture('consultation_booking_started')}
             >
               <span className="relative z-10 flex items-center gap-2">
                 Book a call
