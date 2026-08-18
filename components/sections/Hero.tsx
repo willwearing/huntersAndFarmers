@@ -20,7 +20,7 @@ export function Hero() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-8"
           >
             <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-            <span className="text-sm text-surface-300">Australia-wide sales recruitment for employers</span>
+            <span className="text-sm text-surface-300">Australia-wide sales and construction recruitment for employers</span>
           </motion.div>
 
           <motion.h1
@@ -29,7 +29,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] as const }}
             className="text-4xl md:text-6xl lg:text-hero font-bold text-surface-50 leading-tight"
           >
-            Hire proven sales talent across <span className="text-gradient">Australia</span>
+            Hire proven sales and construction talent across <span className="text-gradient">Australia</span>
           </motion.h1>
 
           <motion.p
@@ -38,7 +38,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.5, ease: [0.16, 1, 0.3, 1] as const }}
             className="mt-6 text-lg md:text-xl text-surface-400 max-w-2xl mx-auto font-body"
           >
-            From SDRs and Account Executives through to Sales Leaders and Revenue Operations, we help employers run efficient hiring searches without unnecessary complexity.
+            From SDRs and Account Executives through to Sales Leaders and Revenue Operations, and from Project Coordinators through to Project Directors, we help employers run efficient hiring searches without unnecessary complexity.
           </motion.p>
 
           <motion.div
