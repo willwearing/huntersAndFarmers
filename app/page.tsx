@@ -5,14 +5,14 @@ import { PreviewCards } from '@/components/sections/PreviewCards'
 const stats = [
   { value: 'Australia-wide', label: 'National search capability' },
   { value: '16+ Roles', label: 'Individual contributor to leadership' },
-  { value: 'Sales + RevOps', label: 'Commercial hiring focus' },
+  { value: 'Sales + Construction', label: 'Specialist hiring focus' },
   { value: 'Brief to shortlist', label: 'Structured hiring process' },
 ]
 
 const previewCards = [
   {
     title: 'For Employers',
-    description: 'See the role coverage, hiring process, and support model for commercial teams.',
+    description: 'See the role coverage, hiring process, and support model for sales and construction teams.',
     href: '/employers',
   },
   {

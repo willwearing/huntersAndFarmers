@@ -1,13 +1,13 @@
 import Link from 'next/link'
 
-export default function BrisbaneSalesRecruitmentPage() {
+export default function BrisbaneRecruitmentPage() {
   return (
     <main className="min-h-screen px-6 py-28 bg-surface-900">
       <article className="mx-auto max-w-content">
         <p className="text-sm uppercase tracking-wider text-accent">Employers · Brisbane</p>
-        <h1 className="mt-4 text-4xl font-bold text-surface-50">Sales Recruitment in Brisbane</h1>
+        <h1 className="mt-4 text-4xl font-bold text-surface-50">Sales and Construction Recruitment in Brisbane</h1>
         <p className="mt-6 text-surface-300 max-w-3xl leading-relaxed font-body">
-          For Brisbane hiring teams, we recruit practical commercial talent across business development, account management, customer success, and leadership roles.
+          For Brisbane hiring teams, we recruit practical talent across business development, account management, customer success, construction project delivery, contract administration, and site leadership roles.
         </p>
         <div className="mt-10 flex flex-wrap gap-3">
           <Link href="/employers/australia" className="rounded-lg border border-surface-700 px-4 py-2 text-surface-200 hover:border-accent/60">Australia hub</Link>

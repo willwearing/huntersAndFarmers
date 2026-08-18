@@ -55,7 +55,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-4 text-sm text-surface-500 max-w-xs">
-              Simple, effective recruitment focused on connecting great sales professionals with businesses.
+              Simple, effective recruitment connecting great sales and construction professionals with businesses.
             </p>
           </motion.div>
 

@@ -1,13 +1,13 @@
 import Link from 'next/link'
 
-export default function AdelaideSalesRecruitmentPage() {
+export default function AdelaideRecruitmentPage() {
   return (
     <main className="min-h-screen px-6 py-28 bg-surface-900">
       <article className="mx-auto max-w-content">
         <p className="text-sm uppercase tracking-wider text-accent">Employers · Adelaide</p>
-        <h1 className="mt-4 text-4xl font-bold text-surface-50">Sales Recruitment in Adelaide</h1>
+        <h1 className="mt-4 text-4xl font-bold text-surface-50">Sales and Construction Recruitment in Adelaide</h1>
         <p className="mt-6 text-surface-300 max-w-3xl leading-relaxed font-body">
-          We help Adelaide businesses hire revenue talent with clear scorecards and practical shortlists across individual contributor and leadership roles.
+          We help Adelaide businesses hire sales and commercial construction talent with clear scorecards and practical shortlists across individual contributor, project delivery, site, and leadership roles.
         </p>
         <div className="mt-10 flex flex-wrap gap-3">
           <Link href="/employers/australia" className="rounded-lg border border-surface-700 px-4 py-2 text-surface-200 hover:border-accent/60">Australia hub</Link>
