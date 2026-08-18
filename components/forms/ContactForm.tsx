@@ -24,12 +24,16 @@ export function ContactForm() {
   const onSubmit = async (data: ContactFormData) => {
     try {
       const distinctId = posthog.get_distinct_id()
+      const sessionId = posthog.get_session_id()
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           ...(distinctId
             ? { 'X-PostHog-Distinct-Id': distinctId }
+            : {}),
+          ...(sessionId
+            ? { 'X-PostHog-Session-Id': sessionId }
             : {}),
         },
         body: JSON.stringify(data),

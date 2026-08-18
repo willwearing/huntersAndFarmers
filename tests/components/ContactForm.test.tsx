@@ -3,15 +3,17 @@ import { render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { ContactForm } from '@/components/forms/ContactForm'
 
-const { captureException, getDistinctId } = vi.hoisted(() => ({
+const { captureException, getDistinctId, getSessionId } = vi.hoisted(() => ({
   captureException: vi.fn(),
   getDistinctId: vi.fn(() => 'test-distinct-id'),
+  getSessionId: vi.fn(() => 'test-session-id'),
 }))
 
 vi.mock('posthog-js', () => ({
   default: {
     captureException,
     get_distinct_id: getDistinctId,
+    get_session_id: getSessionId,
   },
 }))
 
@@ -66,6 +68,7 @@ describe('ContactForm', () => {
         expect.objectContaining({
           headers: expect.objectContaining({
             'X-PostHog-Distinct-Id': 'test-distinct-id',
+            'X-PostHog-Session-Id': 'test-session-id',
           }),
         })
       )
